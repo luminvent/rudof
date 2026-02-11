@@ -17,4 +17,6 @@ reqwest.workspace = true
 serde.workspace = true
 thiserror.workspace = true
 url.workspace = true
+
+[dev-dependencies]
 proptest.workspace = true
