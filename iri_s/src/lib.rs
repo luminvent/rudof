@@ -12,3 +12,7 @@ mod mime_type;
 
 pub use crate::iri::{Iri, IriS};
 pub use crate::mime_type::MimeType;
+
+pub mod iris {
+  pub use super::IriS;
+}
