@@ -49,6 +49,20 @@ impl PrefixMap {
         self.map.is_empty()
     }
 
+   /// Inserts an alias association to an IRI
+    pub fn insert(&mut self, alias: &str, iri: &IriS) -> Result<(), PrefixMapError> {
+        match self.map.entry(alias.to_string()) {
+            indexmap::map::Entry::Occupied(mut e) => {
+                // TODO: Possible error with repeated aliases??
+                e.insert(iri.to_owned());
+            }
+            indexmap::map::Entry::Vacant(v) => {
+                v.insert(iri.to_owned());
+            }
+        };
+        Ok(())
+    }
+
     /// Inserts an alias association to an IRI
     ///
     /// Returns an [`PrefixMapError`] if the alias already exists.
