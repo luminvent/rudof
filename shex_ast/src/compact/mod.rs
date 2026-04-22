@@ -5,8 +5,8 @@
 //! ```
 //! # use iri_s::{iri, IriS};
 //!
-//! use shex_ast::{Schema, Shape, ShapeExpr, ShapeExprLabel};
-//! use shex_ast::compact::ShExParser;
+//! use li_shex_ast::{Schema, Shape, ShapeExpr, ShapeExprLabel};
+//! use li_shex_ast::compact::ShExParser;
 //!
 //! let str = r#"prefix : <http://example.org/>
 //!              :S {}

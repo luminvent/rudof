@@ -1,5 +1,5 @@
 [package]
-name = "mie"
+name = "li_mie"
 version = "0.2.9"
 authors.workspace = true
 description.workspace = true

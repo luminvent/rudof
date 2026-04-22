@@ -3,7 +3,7 @@ use anyhow::{Context, Result, bail};
 #[cfg(not(target_family = "wasm"))]
 use clap::Parser;
 #[cfg(not(target_family = "wasm"))]
-use shex_testsuite::{
+use li_shex_testsuite::{
     config::Config,
     config::ConfigError,
     manifest::Manifest,

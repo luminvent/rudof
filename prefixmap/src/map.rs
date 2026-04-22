@@ -247,8 +247,8 @@ impl PrefixMap {
     /// If it can't qualify the IRI, it returns the iri between `<` and `>`
     /// ```
     /// # use std::collections::HashMap;
-    /// # use prefixmap::PrefixMap;
-    /// # use prefixmap::error::PrefixMapError;
+    /// # use li_prefixmap::PrefixMap;
+    /// # use li_prefixmap::error::PrefixMapError;
     /// # use iri_s::*;
     /// # use std::str::FromStr;
     /// let pm: PrefixMap = HashMap::from([
@@ -275,8 +275,8 @@ impl PrefixMap {
     ///
     /// ```
     /// # use std::collections::HashMap;
-    /// # use prefixmap::PrefixMap;
-    /// # use prefixmap::error::PrefixMapError;
+    /// # use li_prefixmap::PrefixMap;
+    /// # use li_prefixmap::error::PrefixMapError;
     /// # use iri_s::*;
     /// # use std::str::FromStr;
     /// let pm: PrefixMap = HashMap::from([
@@ -308,8 +308,8 @@ impl PrefixMap {
     ///
     /// ```
     /// # use std::collections::HashMap;
-    /// # use prefixmap::PrefixMap;
-    /// # use prefixmap::error::PrefixMapError;
+    /// # use li_prefixmap::PrefixMap;
+    /// # use li_prefixmap::error::PrefixMapError;
     /// # use iri_s::*;
     /// # use std::str::FromStr;
     /// let pm: PrefixMap = HashMap::from([
@@ -351,8 +351,8 @@ impl PrefixMap {
     ///
     /// ```
     /// # use std::collections::HashMap;
-    /// # use prefixmap::PrefixMap;
-    /// # use prefixmap::error::PrefixMapError;
+    /// # use li_prefixmap::PrefixMap;
+    /// # use li_prefixmap::error::PrefixMapError;
     /// # use iri_s::*;
     /// # use std::str::FromStr;
     /// let pm: PrefixMap = HashMap::from([
@@ -396,8 +396,8 @@ impl PrefixMap {
     /// Given a string like "ex:a" and a prefixmap that has alias "ex" with value "https://example.org/", the result will be "https://example.org/a"
     /// ```
     /// # use std::collections::HashMap;
-    /// # use prefixmap::PrefixMap;
-    /// # use prefixmap::error::PrefixMapError;
+    /// # use li_prefixmap::PrefixMap;
+    /// # use li_prefixmap::error::PrefixMapError;
     /// # use iri_s::*;
     /// # use std::str::FromStr;
     ///
@@ -438,8 +438,8 @@ impl PrefixMap {
     ///
     /// ```
     /// # use std::collections::HashMap;
-    /// # use prefixmap::PrefixMap;
-    /// # use prefixmap::error::PrefixMapError;
+    /// # use li_prefixmap::PrefixMap;
+    /// # use li_prefixmap::error::PrefixMapError;
     /// # use iri_s::*;
     /// # use std::str::FromStr;
     ///

@@ -1,12 +1,12 @@
 use crate::common::error::TestSuiteError;
 use crate::common::test_instance::TestInstance;
+use li_shacl::rdf::ShaclParser;
+use li_shacl::validator::report::ValidationReport;
+use li_shacl::validator::store::{Graph, Store};
 use oxrdf::{NamedNode, NamedOrBlankNode, Term};
 use rudof_rdf::rdf_core::term::Triple;
 use rudof_rdf::rdf_core::vocabs::{RdfVocab, ShaclTestVocab, TestManifestVocab};
 use rudof_rdf::rdf_core::{Any, NeighsRDF, RDFFormat};
-use shacl::rdf::ShaclParser;
-use shacl::validator::report::ValidationReport;
-use shacl::validator::store::{Graph, Store};
 use sparql_service::RdfData;
 use std::collections::HashSet;
 use std::path::Path;

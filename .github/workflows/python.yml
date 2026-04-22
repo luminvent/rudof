@@ -79,7 +79,7 @@ jobs:
           name: wheels-linux-${{ matrix.target }}
           path: python/dist
       - name: Install Built Wheel
-        run: python3 -m pip install -vv pyrudof --find-links=python/dist --no-index
+        run: python3 -m pip install -vv li_pyrudof --find-links=python/dist --no-index
       - name: Test Built Wheel
         run: cd python/tests && python3 -m unittest discover -vvv
 
@@ -109,7 +109,7 @@ jobs:
           name: wheels-windows-${{ matrix.target }}
           path: python/dist
       - name: Install Built Wheel
-        run: python3 -m pip install -vv pyrudof --find-links=python/dist --no-index
+        run: python3 -m pip install -vv li_pyrudof --find-links=python/dist --no-index
       - name: Test Built Wheel
         run: cd python/tests && python3 -m unittest discover -vvv
 
@@ -144,7 +144,7 @@ jobs:
           name: wheels-macos-${{ matrix.target }}
           path: python/dist
       - name: Install Built Wheel
-        run: python3 -m pip install -vv pyrudof --find-links=python/dist --no-index
+        run: python3 -m pip install -vv li_pyrudof --find-links=python/dist --no-index
       - name: Test Built Wheel
         run: cd python/tests && python3 -m unittest discover -vvv
 
@@ -164,7 +164,7 @@ jobs:
 #          name: wheels
 #          path: python/dist
 #      - name: Install Built sdist
-#        run: python3 -m pip install -vv pyrudof --find-links=python/dist --no-index
+#        run: python3 -m pip install -vv li_pyrudof --find-links=python/dist --no-index
 #      - name: Test Built sdist
 #        run: cd python/tests && python3 -m unittest discover -vvv
 

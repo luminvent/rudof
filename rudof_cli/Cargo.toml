@@ -1,5 +1,5 @@
 [package]
-name = "rudof_cli"
+name = "li_rudof_cli"
 version = "0.2.12"
 authors.workspace = true
 description.workspace = true

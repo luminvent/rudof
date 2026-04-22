@@ -1,5 +1,5 @@
 [package]
-name = "rbe_testsuite"
+name = "li_rbe_testsuite"
 version = "0.2.10"
 authors.workspace = true
 description.workspace = true

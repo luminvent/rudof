@@ -1,7 +1,7 @@
 #[cfg(not(target_family = "wasm"))]
 use clap::{Arg, Command};
 #[cfg(not(target_family = "wasm"))]
-use rudof_generate::{DataGenerator, GeneratorConfig};
+use li_rudof_generate::{DataGenerator, GeneratorConfig};
 #[cfg(not(target_family = "wasm"))]
 use std::path::PathBuf;
 #[cfg(not(target_family = "wasm"))]
@@ -142,9 +142,9 @@ async fn main() {
 
 /// Load configuration from file
 #[cfg(not(target_family = "wasm"))]
-async fn load_config(config_path: &PathBuf) -> rudof_generate::errors::Result<GeneratorConfig> {
+async fn load_config(config_path: &PathBuf) -> li_rudof_generate::errors::Result<GeneratorConfig> {
     if !config_path.exists() {
-        return Err(rudof_generate::errors::DataGeneratorError::Config(format!(
+        return Err(li_rudof_generate::errors::DataGeneratorError::Config(format!(
             "Configuration file does not exist: {}",
             config_path.display()
         )));

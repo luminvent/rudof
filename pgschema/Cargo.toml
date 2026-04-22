@@ -1,5 +1,5 @@
 [package]
-name = "pgschema"
+name = "li_pgschema"
 version = "0.2.9"
 edition = "2024"
 license = "MIT"

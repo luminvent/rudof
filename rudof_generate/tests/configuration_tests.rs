@@ -1,5 +1,5 @@
 #[cfg(not(target_family = "wasm"))]
-use rudof_generate::config::{
+use li_rudof_generate::config::{
     CardinalityStrategy, DataQuality, DatatypeConfig, EntityDistribution, GeneratorConfig, OutputFormat,
     PropertyConfig, PropertySelectionStrategy,
 };

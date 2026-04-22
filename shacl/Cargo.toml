@@ -1,5 +1,5 @@
 [package]
-name = 'shacl'
+name = 'li_shacl'
 version = "0.2.9"
 readme = "README.md"
 authors.workspace = true

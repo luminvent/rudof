@@ -1,5 +1,5 @@
 [package]
-name = "rbe"
+name = "li_rbe"
 version = "0.2.11"
 authors.workspace = true
 description.workspace = true

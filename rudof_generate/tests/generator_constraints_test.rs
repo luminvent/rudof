@@ -1,5 +1,5 @@
 #[cfg(not(target_family = "wasm"))]
-use rudof_generate::{DataGenerator, GeneratorConfig};
+use li_rudof_generate::{DataGenerator, GeneratorConfig};
 #[cfg(not(target_family = "wasm"))]
 use rudof_rdf::rdf_core::{NeighsRDF, RDFFormat};
 #[cfg(not(target_family = "wasm"))]

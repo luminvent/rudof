@@ -1,5 +1,5 @@
 [package]
-name = "sparql_service"
+name = "li_sparql_service"
 version = "0.2.12"
 authors.workspace = true
 description.workspace = true

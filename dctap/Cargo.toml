@@ -1,5 +1,5 @@
 [package]
-name = "dctap"
+name = "li_dctap"
 version = "0.2.9"
 authors.workspace = true
 description.workspace = true

@@ -3,9 +3,9 @@
 //! These tests verify that the server correctly advertises its capabilities
 
 #[cfg(not(target_family = "wasm"))]
-use rmcp::{ServerHandler, model::ProtocolVersion};
+use li_rudof_mcp::service::RudofMcpService;
 #[cfg(not(target_family = "wasm"))]
-use rudof_mcp::service::RudofMcpService;
+use rmcp::{ServerHandler, model::ProtocolVersion};
 
 /// Test that the server can be created successfully
 #[cfg(not(target_family = "wasm"))]

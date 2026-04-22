@@ -10,9 +10,9 @@
 //! - Tool/prompt router availability
 
 #[cfg(not(target_family = "wasm"))]
-use rmcp::ServerHandler;
+use li_rudof_mcp::service::RudofMcpService;
 #[cfg(not(target_family = "wasm"))]
-use rudof_mcp::service::RudofMcpService;
+use rmcp::ServerHandler;
 
 // =============================================================================
 // Service Initialization Tests
@@ -61,7 +61,7 @@ mod tool_router_tests {
     /// Test that annotated_tools returns tools
     #[test]
     fn test_annotated_tools_not_empty() {
-        use rudof_mcp::service::annotated_tools;
+        use li_rudof_mcp::service::annotated_tools;
 
         let tools = annotated_tools();
 
@@ -71,7 +71,7 @@ mod tool_router_tests {
     /// Test tools have required fields
     #[test]
     fn test_tools_have_name_and_description() {
-        use rudof_mcp::service::annotated_tools;
+        use li_rudof_mcp::service::annotated_tools;
 
         let tools = annotated_tools();
 
@@ -87,7 +87,7 @@ mod tool_router_tests {
     /// Test expected tools are present
     #[test]
     fn test_expected_tools_present() {
-        use rudof_mcp::service::annotated_tools;
+        use li_rudof_mcp::service::annotated_tools;
 
         let tools = annotated_tools();
         let tool_names: Vec<_> = tools.iter().map(|t| t.name.to_string()).collect();

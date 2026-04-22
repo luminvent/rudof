@@ -1,5 +1,5 @@
 #[cfg(not(target_family = "wasm"))]
-use rudof_cli::{
+use li_rudof_cli::{
     cli::parser::{Cli, Command},
     commands::{CommandContext, CommandFactory},
 };

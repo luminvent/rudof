@@ -13,7 +13,7 @@ pub use iris::IriS;
 /// ```
 ///
 /// #[macro_use]
-/// # use iri_s::{IriS, iri};
+/// # use li_iri_s::{IriS, iri};
 ///
 /// let iri = iri!("https://example.org/");
 ///
@@ -25,7 +25,7 @@ pub use iris::IriS;
 /// Example
 ///
 /// ```
-/// # use iri_s::IriS;
+/// # use li_iri_s::IriS;
 /// # use std::str::FromStr;
 ///
 /// let iri = IriS::from_str("https://example.org/").unwrap();

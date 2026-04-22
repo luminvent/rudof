@@ -2,15 +2,15 @@
 #![allow(clippy::manual_strip)]
 
 #[cfg(not(target_family = "wasm"))]
+use li_rudof_generate::config::{DatatypeConfig, PropertyConfig};
+#[cfg(not(target_family = "wasm"))]
+use li_rudof_generate::field_generators::pattern::PatternGenerator;
+#[cfg(not(target_family = "wasm"))]
+use li_rudof_generate::field_generators::{FieldGenerator, GenerationContext};
+#[cfg(not(target_family = "wasm"))]
+use li_rudof_generate::{DataGenerator, GeneratorConfig};
+#[cfg(not(target_family = "wasm"))]
 use regex::Regex;
-#[cfg(not(target_family = "wasm"))]
-use rudof_generate::config::{DatatypeConfig, PropertyConfig};
-#[cfg(not(target_family = "wasm"))]
-use rudof_generate::field_generators::pattern::PatternGenerator;
-#[cfg(not(target_family = "wasm"))]
-use rudof_generate::field_generators::{FieldGenerator, GenerationContext};
-#[cfg(not(target_family = "wasm"))]
-use rudof_generate::{DataGenerator, GeneratorConfig};
 #[cfg(not(target_family = "wasm"))]
 use serde_json::json;
 #[cfg(not(target_family = "wasm"))]

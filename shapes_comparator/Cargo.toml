@@ -1,5 +1,5 @@
 [package]
-name = "shapes_comparator"
+name = "li_shapes_comparator"
 version = "0.2.9"
 authors.workspace = true
 description.workspace = true

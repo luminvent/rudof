@@ -3,9 +3,9 @@ use anyhow::*;
 #[cfg(not(target_family = "wasm"))]
 use clap::Parser;
 #[cfg(not(target_family = "wasm"))]
-use pgschema::cli::{Cli, Command};
+use li_pgschema::cli::{Cli, Command};
 #[cfg(not(target_family = "wasm"))]
-use pgschema::parser::{map_builder::MapBuilder, pg_builder::PgBuilder, pgs_builder::PgsBuilder};
+use li_pgschema::parser::{map_builder::MapBuilder, pg_builder::PgBuilder, pgs_builder::PgsBuilder};
 #[cfg(not(target_family = "wasm"))]
 use std::result::Result::Ok;
 
@@ -67,10 +67,10 @@ fn run_validate(graph_path: &str, schema_path: &str, map_path: &str) -> Result<(
 }
 
 #[cfg(not(target_family = "wasm"))]
-fn get_schema(path: &str) -> Result<pgschema::pgs::PropertyGraphSchema> {
+fn get_schema(path: &str) -> Result<li_pgschema::pgs::PropertyGraphSchema> {
     let schema_content =
         std::fs::read_to_string(path).with_context(|| format!("Failed to read schema file: {}", path))?;
-    let schema: pgschema::pgs::PropertyGraphSchema = match PgsBuilder::new().parse_pgs(schema_content.as_str()) {
+    let schema: li_pgschema::pgs::PropertyGraphSchema = match PgsBuilder::new().parse_pgs(schema_content.as_str()) {
         Ok(schema) => schema,
         Err(e) => {
             bail!("Failed to parse schema: {}", e);
@@ -80,7 +80,7 @@ fn get_schema(path: &str) -> Result<pgschema::pgs::PropertyGraphSchema> {
 }
 
 #[cfg(not(target_family = "wasm"))]
-fn get_graph(path: &str) -> Result<pgschema::pg::PropertyGraph> {
+fn get_graph(path: &str) -> Result<li_pgschema::pg::PropertyGraph> {
     let graph_content =
         std::fs::read_to_string(path).with_context(|| format!("Failed to read graph file: {}", path))?;
     let graph = match PgBuilder::new().parse_pg(graph_content.as_str()) {
@@ -93,10 +93,10 @@ fn get_graph(path: &str) -> Result<pgschema::pg::PropertyGraph> {
 }
 
 #[cfg(not(target_family = "wasm"))]
-fn get_map(path: &str) -> Result<pgschema::type_map::TypeMap> {
+fn get_map(path: &str) -> Result<li_pgschema::type_map::TypeMap> {
     let map_content =
         std::fs::read_to_string(path).with_context(|| format!("Failed to read type map file: {}", path))?;
-    let map: pgschema::type_map::TypeMap = match MapBuilder::new().parse_map(map_content.as_str()) {
+    let map: li_pgschema::type_map::TypeMap = match MapBuilder::new().parse_map(map_content.as_str()) {
         Ok(map) => map,
         Err(e) => {
             bail!("Failed to parse type map: {}", e);

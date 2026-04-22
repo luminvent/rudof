@@ -1,5 +1,5 @@
 [package]
-name = "shex_validation"
+name = "li_shex_validation"
 version = "0.2.11"
 authors.workspace = true
 description.workspace = true

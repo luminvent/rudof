@@ -14,7 +14,7 @@
 //! ```
 //! # use std::str::FromStr;
 //! # use iri_s::{IriS, error::IriSError};
-//! # use prefixmap::PrefixMap;
+//! # use li_prefixmap::PrefixMap;
 //!
 //! # fn main() -> Result<(), IriSError> {
 //! let schema_iri  = IriS::from_str("https://schema.org/")?;

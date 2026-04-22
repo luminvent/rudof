@@ -1,7 +1,7 @@
 #[cfg(not(target_family = "wasm"))]
-use rudof_generate::config::GeneratorConfig;
+use li_rudof_generate::config::GeneratorConfig;
 #[cfg(not(target_family = "wasm"))]
-use rudof_generate::{DataGenerator, errors::Result};
+use li_rudof_generate::{DataGenerator, errors::Result};
 #[cfg(not(target_family = "wasm"))]
 use std::path::PathBuf;
 #[cfg(not(target_family = "wasm"))]

@@ -1,5 +1,5 @@
 #[cfg(not(target_family = "wasm"))]
-use shex_testsuite::{
+use li_shex_testsuite::{
     config::Config, manifest::Manifest, manifest_mode::ManifestShExSyntaxMode, manifest_run_mode::ManifestRunMode,
     manifest_validation::ManifestValidation,
 };

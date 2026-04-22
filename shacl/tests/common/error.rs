@@ -1,5 +1,5 @@
+use li_shacl::error::{IRError, ReportError, ShaclParserError};
 use oxrdf::TryFromTermError;
-use shacl::error::{IRError, ReportError, ShaclParserError};
 use sparql_service::RdfDataError;
 use std::io;
 use thiserror::Error;

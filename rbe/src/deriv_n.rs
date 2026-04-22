@@ -7,7 +7,7 @@ use std::fmt::Debug;
 /// In case the value of `F` is None, the row will be skipped while if the value is `Some(x)`, then the corresponding element will be replaced by `x`.
 ///
 /// ```
-/// use rbe::deriv_n;
+/// use li_rbe::deriv_n;
 ///
 /// let vec = vec![1,2,3];
 /// let sets = deriv_n(vec, |x: &i32| { Some(x + 100)}).collect::<Vec<_>>();
@@ -22,7 +22,7 @@ use std::fmt::Debug;
 /// A similar example which doesn't generate iterator for the value 2
 ///
 /// ```
-/// use rbe::deriv_n;
+/// use li_rbe::deriv_n;
 ///
 /// let vec = vec![1,2,3];
 /// let sets = deriv_n(vec, |x: &i32| {

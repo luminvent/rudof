@@ -1,5 +1,5 @@
 [package]
-name = "pyrudof"
+name = "li_pyrudof"
 version = "0.2.12"
 documentation = "https://rudof-project.github.io/rudof/"
 readme = "README.md"

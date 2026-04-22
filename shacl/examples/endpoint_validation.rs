@@ -3,11 +3,11 @@ fn main() {}
 
 #[cfg(not(target_family = "wasm"))]
 fn main() -> anyhow::Result<()> {
+    use li_shacl::validator::ShaclValidationMode;
+    use li_shacl::validator::processor::{EndpointValidation, ShaclProcessor};
+    use li_shacl::validator::store::ShaclDataManager;
     use prefixmap::PrefixMap;
     use rudof_rdf::rdf_core::RDFFormat;
-    use shacl::validator::ShaclValidationMode;
-    use shacl::validator::processor::{EndpointValidation, ShaclProcessor};
-    use shacl::validator::store::ShaclDataManager;
     use std::io::Cursor;
 
     let shacl = r#"

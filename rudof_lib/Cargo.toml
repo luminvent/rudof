@@ -1,5 +1,5 @@
 [package]
-name = "rudof_lib"
+name = "li_rudof_lib"
 version = "0.2.12"
 authors.workspace = true
 description.workspace = true

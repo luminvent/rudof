@@ -58,8 +58,8 @@ impl TapReaderBuilder {
     ///
     /// # Example
     /// ```no_run
-    /// use dctap::TapReaderBuilder;
-    /// use dctap::TapConfig;
+    /// use li_dctap::TapReaderBuilder;
+    /// use li_dctap::TapConfig;
     /// use std::error::Error;
     ///
     /// # fn main() { example().unwrap(); }

@@ -21,8 +21,8 @@ use crate::pp_object_value;
 ///
 /// Example:
 /// ```
-/// use shex_ast::compact::ShExFormatter;
-/// use shex_ast::{Schema, ShapeExprLabel, ShapeExpr};
+/// use li_shex_ast::compact::ShExFormatter;
+/// use li_shex_ast::{Schema, ShapeExprLabel, ShapeExpr};
 /// use iri_s::{IriS, iri};
 ///
 /// let mut schema = Schema::new(&iri!("http://default/"));

@@ -1,11 +1,11 @@
 #[cfg(not(target_family = "wasm"))]
 use crate::common::{Manifest, TestSuiteError};
 #[cfg(not(target_family = "wasm"))]
-use shacl::error::IRError;
+use li_shacl::error::IRError;
 #[cfg(not(target_family = "wasm"))]
-use shacl::validator::ShaclValidationMode;
+use li_shacl::validator::ShaclValidationMode;
 #[cfg(not(target_family = "wasm"))]
-use shacl::validator::processor::{DataValidation, ShaclProcessor};
+use li_shacl::validator::processor::{DataValidation, ShaclProcessor};
 #[cfg(not(target_family = "wasm"))]
 use std::path::Path;
 

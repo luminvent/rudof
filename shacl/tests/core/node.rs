@@ -2,7 +2,7 @@
 mod tests {
     use crate::common::TestSuiteError;
     use crate::test;
-    use shacl::validator::ShaclValidationMode;
+    use li_shacl::validator::ShaclValidationMode;
 
     const PATH: &str = "tests/data-shapes/data-shapes-test-suite/tests/core/node/";
 

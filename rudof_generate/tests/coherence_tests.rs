@@ -1,7 +1,7 @@
 #[cfg(not(target_family = "wasm"))]
-use rudof_generate::config::OutputFormat;
+use li_rudof_generate::config::OutputFormat;
 #[cfg(not(target_family = "wasm"))]
-use rudof_generate::{DataGenerator, GeneratorConfig};
+use li_rudof_generate::{DataGenerator, GeneratorConfig};
 #[cfg(not(target_family = "wasm"))]
 use std::collections::HashMap;
 #[cfg(not(target_family = "wasm"))]
@@ -41,7 +41,7 @@ ex:PersonShape a sh:NodeShape ;
     let mut config = GeneratorConfig::default();
     config.generation.entity_count = 100;
     config.generation.property_fill_probability = 0.5;
-    config.generation.cardinality_strategy = rudof_generate::config::CardinalityStrategy::Maximum;
+    config.generation.cardinality_strategy = li_rudof_generate::config::CardinalityStrategy::Maximum;
     config.output.path = output_file.path().to_path_buf();
     config.output.format = OutputFormat::NTriples; // Use NTriples for easy counting
 
@@ -106,7 +106,7 @@ ex:RequiredShape a sh:NodeShape ;
     config.generation.entity_count = 100;
     config.generation.property_fill_probability = 0.5;
     config.generation.ignore_min_cardinality = true;
-    config.generation.cardinality_strategy = rudof_generate::config::CardinalityStrategy::Maximum;
+    config.generation.cardinality_strategy = li_rudof_generate::config::CardinalityStrategy::Maximum;
     config.output.path = output_file.path().to_path_buf();
     config.output.format = OutputFormat::NTriples;
 
@@ -169,7 +169,7 @@ ex:ManyPropsShape a sh:NodeShape ;
     config.generation.entity_count = 10;
     config.generation.max_properties_per_instance = 5;
     config.generation.property_fill_probability = 1.0;
-    config.generation.cardinality_strategy = rudof_generate::config::CardinalityStrategy::Maximum;
+    config.generation.cardinality_strategy = li_rudof_generate::config::CardinalityStrategy::Maximum;
     config.output.path = output_file.path().to_path_buf();
     config.output.format = OutputFormat::NTriples;
 
@@ -229,8 +229,8 @@ ex:RandomPropsShape a sh:NodeShape ;
     let mut config = GeneratorConfig::default();
     config.generation.entity_count = 20;
     config.generation.property_fill_probability = 0.5;
-    config.generation.property_selection_strategy = rudof_generate::config::PropertySelectionStrategy::Random;
-    config.generation.cardinality_strategy = rudof_generate::config::CardinalityStrategy::Maximum;
+    config.generation.property_selection_strategy = li_rudof_generate::config::PropertySelectionStrategy::Random;
+    config.generation.cardinality_strategy = li_rudof_generate::config::CardinalityStrategy::Maximum;
     config.output.path = output_file.path().to_path_buf();
     config.output.format = OutputFormat::NTriples;
 
@@ -305,8 +305,8 @@ ex:VariancePropsShape a sh:NodeShape ;
     config.generation.entity_count = 50;
     config.generation.property_fill_probability = 0.5;
     config.generation.property_count_variance = 0.8;
-    config.generation.property_selection_strategy = rudof_generate::config::PropertySelectionStrategy::Random;
-    config.generation.cardinality_strategy = rudof_generate::config::CardinalityStrategy::Maximum;
+    config.generation.property_selection_strategy = li_rudof_generate::config::PropertySelectionStrategy::Random;
+    config.generation.cardinality_strategy = li_rudof_generate::config::CardinalityStrategy::Maximum;
     config.output.path = output_file.path().to_path_buf();
     config.output.format = OutputFormat::NTriples;
 
@@ -432,13 +432,13 @@ ex:ShapeLow a sh:NodeShape ;
     let output_file = NamedTempFile::new().unwrap();
 
     // 2. Configure default prob=1.0, but override ShapeLow to be 0.0
-    use rudof_generate::config::TypeOverrideConfig;
+    use li_rudof_generate::config::TypeOverrideConfig;
     let mut config = GeneratorConfig::default();
     config.generation.entity_count = 20; // 10 of each roughly
     config.generation.property_fill_probability = 1.0;
 
     // Explicit Equal distribution to ensure we have both
-    config.generation.entity_distribution = rudof_generate::config::EntityDistribution::Equal;
+    config.generation.entity_distribution = li_rudof_generate::config::EntityDistribution::Equal;
 
     let mut overrides = HashMap::new();
     overrides.insert(

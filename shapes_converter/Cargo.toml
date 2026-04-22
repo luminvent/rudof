@@ -1,5 +1,5 @@
 [package]
-name = "shapes_converter"
+name = "li_shapes_converter"
 version = "0.2.9"
 authors.workspace = true
 description.workspace = true

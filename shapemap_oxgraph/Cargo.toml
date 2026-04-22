@@ -1,5 +1,5 @@
 [package]
-name = "shapemap_oxgraph"
+name = "li_shapemap_oxgraph"
 version.workspace = true
 authors.workspace = true
 documentation = "https://docs.rs/shapemap_oxgraph"

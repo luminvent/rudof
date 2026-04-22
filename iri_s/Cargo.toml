@@ -1,5 +1,5 @@
 [package]
-name = "iri_s"
+name = "li_iri_s"
 version = "0.2.9"
 authors.workspace = true
 description.workspace = true
