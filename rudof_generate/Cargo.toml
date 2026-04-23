@@ -1,6 +1,6 @@
 [package]
 name = "li_rudof_generate"
-version = "0.2.12"
+version = "0.2.14"
 readme = "README.md"
 edition.workspace = true
 license.workspace = true

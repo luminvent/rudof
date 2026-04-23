@@ -1,6 +1,6 @@
 [package]
 name = "li_rbe_testsuite"
-version = "0.2.10"
+version = "0.2.14"
 authors.workspace = true
 description.workspace = true
 documentation = "https://docs.rs/rbe_testsuite"

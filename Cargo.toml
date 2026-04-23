@@ -302,7 +302,7 @@ rand = "0.8"
 rayon = "1.7"
 rbe = { version = "0.2.1", path = "./rbe", package = "li_rbe" }
 rbe_testsuite = { version = "0.2.1", path = "./rbe_testsuite", package = "li_rbe_testsuite" }
-rdf_config = { version = "0.1.102", path = "./rdf_config", package = "li_rdf_config" }
+rdf_config = { version = "0.2.14", path = "./rdf_config", package = "li_rdf_config" }
 regex = "1.11"
 reqwest = { version = "0.12", default-features = false, features = [
     "json",

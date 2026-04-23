@@ -1,6 +1,6 @@
 [package]
 name = 'li_shacl'
-version = "0.2.9"
+version = "0.2.14"
 readme = "README.md"
 authors.workspace = true
 description = "A SHACL validator for RDF data, implemented in Rust."
